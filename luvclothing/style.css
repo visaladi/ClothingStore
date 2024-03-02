@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #313030;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 150vh; /* Note: Consider adjusting the height based on your design needs */
+   /*background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;*/
+}
+
+.container {
+    padding: 10px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0; /* Adjust the padding based on your design preferences */
+}
+
+.logo {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px; /* Adjust the margin based on your design preferences */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    header {
+        text-align: center; /* Center-align the content on smaller screens */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
