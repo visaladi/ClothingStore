@@ -89,3 +89,43 @@ nav ul li a:hover::after {
     font-weight: bold;
     margin-bottom: 20px;
 }
+/* Add these styles to your existing CSS */
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#about {
+    padding: 80px 0;
+    color: #333; /* Change color to your preferred text color */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 img {
+    width: 80%; /* Adjust the width to your preference */
+    max-width: 300px; /* Set a maximum width if needed */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.about-col-1,
+.about-col-2 {
+    flex: 0 0 48%; /* Adjust the percentage to your desired width considering margin or padding */
+    margin-bottom: 20px; /* Add margin between the columns */
+}
+
+.sub-title {
+    font-size: 36px; /* Adjust the font size to your preference */
+    font-weight: 600;
+    color: #333; /* Change color to your preferred text color */
+    margin-bottom: 20px; /* Add margin below the subtitle */
+}
+
