@@ -12,7 +12,7 @@ body {
 
 #header {
     width: 100%;
-    height: 150vh; /* Note: Consider adjusting the height based on your design needs */
+    height: 100px; /* Note: Consider adjusting the height based on your design needs */
     background-size: cover;
     background-position: center;
 }
@@ -66,11 +66,22 @@ nav ul li a:hover::after {
 }
 
 /* Carousel Styles */
-.carousel {
+#carouselSection {
     margin-top: 20px;
 }
 
-/* Heading Styles */
+.carousel-inner {
+    display: flex;
+    transition: transform 1s ease-in-out; /* Set the transition time to 1 second */
+}
+
+.carousel-item {
+    min-width: 200px; /* Adjust the width as per your preference */
+    overflow: hidden; /* Ensures images are contained within the specified height */
+}
+
+
+
 .container h2 {
     color: #fff;
     text-align: center;
